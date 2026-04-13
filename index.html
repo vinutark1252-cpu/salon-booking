@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Salon Booking</title>
+</head>
+
+<body style="text-align:center; font-family:Arial; background:#fff0f5;">
+
+<h1>💄 Salon Booking</h1>
+
+<!-- Name -->
+<input type="text" id="name" placeholder="Enter Name"><br><br>
+
+<!-- SERVICES -->
+<h3>Select Services</h3>
+
+<!-- Hair Services -->
+<h4>Hair Services</h4>
+<input type="checkbox" value="Hair Cut" data-price="200" onchange="calculateTotal()"> Hair Cut - ₹200<br>
+<input type="checkbox" value="Hair Coloring" data-price="800" onchange="calculateTotal()"> Hair Coloring - ₹800<br>
+<input type="checkbox" value="Hair Spa" data-price="600" onchange="calculateTotal()"> Hair Spa - ₹600<br>
+<input type="checkbox" value="Hair Straightening" data-price="1500" onchange="calculateTotal()"> Hair Straightening - ₹1500<br>
+
+<br>
+
+<!-- Skin Services -->
+<h4>Skin Services</h4>
+<input type="checkbox" value="Facial" data-price="500" onchange="calculateTotal()"> Facial - ₹500<br>
+<input type="checkbox" value="Threading" data-price="100" onchange="calculateTotal()"> Threading - ₹100<br>
+<input type="checkbox" value="Waxing" data-price="700" onchange="calculateTotal()"> Waxing - ₹700<br>
+
+<br>
+
+<!-- Hand & Foot -->
+<h4>Hand & Foot Services</h4>
+<input type="checkbox" value="Manicure" data-price="300" onchange="calculateTotal()"> Manicure - ₹300<br>
+<input type="checkbox" value="Pedicure" data-price="400" onchange="calculateTotal()"> Pedicure - ₹400<br>
+
+<br>
+
+<!-- Special -->
+<h4>Special Services</h4>
+<input type="checkbox" value="Bridal Makeup" data-price="3000" onchange="calculateTotal()"> Bridal Makeup - ₹3000<br>
+
+<br>
+
+<!-- TOTAL -->
+<p id="total"><b>Total: ₹0</b></p>
+
+<!-- DATE & TIME -->
+<input type="date" id="date"><br><br>
+<input type="time" id="time"><br><br>
+
+<!-- BUTTON -->
+<button onclick="bookNow()" style="background:#ff4081; color:white; padding:10px; border:none;">
+    Book Appointment
+</button>
+
+<script src="script.js"></script>
+
+</body>
+</html>
